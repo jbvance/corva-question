@@ -16,6 +16,9 @@
   "devDependencies": {
     "nodemon": "^1.18.7"
   },
-  "author": "",
+  "engines": {
+    "node": "10.14.2"
+  },
+  "author": "Jason Vance",
   "license": "ISC"
 }
