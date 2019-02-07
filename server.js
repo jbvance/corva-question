@@ -12,6 +12,10 @@ const PORT = process.env.PORT || 8080;
 const morgan = require('morgan');
 app.use(morgan('common'));
 
+app.get('/', (req, res) => {
+    return res.status(200).json({ message: 'Welcome to the api!'})
+})
+
 // POST method route
 app.post('/compute/:request_id', jsonParser, function (req, res) {
 
